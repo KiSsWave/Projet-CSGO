@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="style.css"> <!-- Relier la page html avec le code CSS -->
+    <link rel="icon" href="img/logo.png"> <!-- Rajouter une icône à l'onglet -->
     <title>Accueil</title>
 </head>
 <body>
@@ -17,7 +17,7 @@
         </div>
         </a>
         <nav> <!-- Barre de navigation -->
-            <a href="#">Accueil</a>
+            <a href="#">Accueil</a> <!-- Lien vers le haut de la page-->
             <a href="#presentation">Présentation</a>
             <a href="#actualite">Actuel</a>
             <a href="#esport">L'Esport</a>
@@ -25,23 +25,46 @@
         </nav>
     </header>
 
-    <section> <!-- Première rubrique -->
+    <section id="presentation"> <!-- Première rubrique -->
+        <article> <!-- Premier article -->
+            <h2>Présentation</h2>
+            <div class="presTxt">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos quae, quo necessitatibus in delectus illum aut suscipit aliquid aperiam asperiores impedit blanditiis consectetur accusamus reprehenderit a. Accusamus quas rem distinctio?
+                Impedit nam sapiente ut. Sunt maiores ducimus delectus officiis voluptas, modi aperiam asperiores facilis quas aspernatur doloribus reiciendis, pariatur libero consequuntur sint vitae earum ea nostrum, obcaecati dolorum ipsum dolores.
+                Fugiat adipisci magnam facere quo. Ut cum voluptatibus nulla atque esse distinctio ab vitae rem corrupti vero dolore, eligendi quis ducimus asperiores. Totam laboriosam non deserunt a modi necessitatibus rem.
+                Sint laboriosam architecto voluptas commodi quos tenetur mollitia odit esse, illo ducimus saepe provident itaque. Reiciendis veniam ratione laborum similique illo rerum tenetur. Perspiciatis earum, assumenda itaque sapiente fugit repellat.
+                Blanditiis, perferendis? Fugit fuga atque quisquam maxime vitae reprehenderit ratione vel libero necessitatibus doloremque tempore laboriosam dignissimos corporis, optio molestiae, explicabo excepturi minus sit, neque voluptate nesciunt quis aliquid facilis.
+                Unde nulla eum sint vitae aliquid necessitatibus itaque? Animi sint inventore facilis quis minus temporibus a, error quae? A, ipsa! Aspernatur provident sapiente beatae facere aliquid, iure excepturi recusandae culpa!
+                </p>
+            </div>
+            <div class="presImg">
+                <img class="miniature" src="screenshot.png" alt="Image tirée du jeu" title="image tirée du jeu">
+            </div>
+        </article>
+        <article></article>
+    </section>
+
+    <section id="actualite"> <!-- Seconde rubrique -->
         <article></article>
         <article></article>
     </section>
 
-    <section> <!-- Seconde rubrique -->
+    <section id="esport"> <!-- Troisième rubrique -->
         <article></article>
         <article></article>
     </section>
 
-    <section> <!-- Troisième rubrique -->
-        <article></article>
-        <article></article>
-    </section>
+    <section id="about"> <!-- Quatrième rubrique -->
+        <div class="us">
+            <div class="portrait">
+                <h2 class="name">Clément Jeandidier</h2>
+                <img src="" alt="" class="profilImg">
+            </div>
+            <div class="portrait">
 
-    <section> <!-- Quatrième rubrique -->
-
+            </div>
+        </div>
     </section>
 </body>
 </html>
+
