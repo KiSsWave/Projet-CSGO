@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'counter-strikeregular';
+    src: url('font/cs_regular-webfont.woff2') format('woff2'),
+         url('font/cs_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 *{
     padding: 0;
 	margin: 0;
@@ -14,37 +23,22 @@ header{
     color:black;
     justify-content:space-between;  
 	z-index:1000;    
-	width:100%;     
+	width:100%;
+	height:10vh;     
 }
 
 header a{
 	text-decoration:none;
 }
 
-
-.title h1{
-	text-decoration: none;
-}
-
-nav{
-	top:0;
-	display: flex;
-	background-color: white;
+.title{
+	display:flex;
 	align-items: center;
-	justify-content:space-around;
-	padding-top: 20px;
-	padding-left: 3%;
-	padding-right: 10%;
-	padding-bottom: 20px;
 }
 
-
-nav a{
-	margin-left: 20px;
-    font-size:21px;
-	color:black;
+.title h1 span{
 	text-decoration: none;
-	font-weight: bold;
+	font-family:'counter-strikeregular';
 }
 
 #CS{
@@ -56,11 +50,44 @@ nav a{
 }
 
 .logo{
-    height:auto;
-	width:80px;
+    height:10vh;
+	width:auto;
 }
 
-#presentation{
+nav{
+	top:0;
+	display: flex;
+	background-color: white;
+	align-items: center;
+	justify-content:space-around;
+	padding-top: 8px;
+	padding-left: 3%;
+	padding-right: 4%;
+	padding-bottom: 6px;
+}
+
+nav a{
+	margin-left: 20px;
+	font-family:'counter-strikeregular';
+	text-transform: uppercase;
+    font-size:21px;
+	color:black;
+	text-decoration: none;
+	font-weight: bold;
+	border-radius: 10px;
+	padding:10px;
+}
+
+nav :hover{
+	background-color:black;
+	color:white;
+}
+
+h2{ 
+	font-size:4em;
+}
+
+#introduction{
 	height:100vh;
 	width: 100%;
 	background-image: url(img/fondaccueil.jpg);
@@ -68,18 +95,24 @@ nav a{
 	background-position: center;
 }
 
-h2{ 
-	font-size:4em;
+.ensavoirplus a{
+	color: white;
+	text-decoration: none;
+	position:absolute	 
 }
 
+#presentation{
+	height:90vh;
+	width:100%;
+	background-color: #1c2b49;
+	
+}
 
 #presentation h2{
 	color:white;
-	position: absolute;
-	top: 20%;
-	left:4%;			
+	padding-top:110px;
+	padding-left:5%;		
 }
-
 
 .article1{
 	display: flex;	
@@ -90,12 +123,11 @@ h2{
 	width:500px;
 	padding:20px;
 	margin-left:6%;
-	margin-top:16%;
+	margin-top:10%;
 	background-color:#1c2b49;
 	border: solid 0,5% black;
 	border-radius:20px;
 	text-align:center;
-	position:relative;
 	overflow:hidden
 }
 
