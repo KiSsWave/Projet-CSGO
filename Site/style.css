@@ -40,6 +40,9 @@ header a{
 	text-decoration: none;
 	font-family:'counter-strikeregular';
 }
+.title h1{
+	font-family:'counter-strikeregular';
+}
 
 #CS{
     color:#1c2b49;
@@ -56,6 +59,7 @@ header a{
 
 nav{
 	top:0;
+	margin:0;
 	display: flex;
 	background-color: white;
 	align-items: center;
@@ -64,6 +68,8 @@ nav{
 	padding-left: 3%;
 	padding-right: 4%;
 	padding-bottom: 6px;
+	align-items:stretch;
+	padding: 0;
 }
 
 nav a{
@@ -74,13 +80,13 @@ nav a{
 	color:black;
 	text-decoration: none;
 	font-weight: bold;
-	border-radius: 10px;
-	padding:10px;
+	padding:12px;
+	padding-top:20px;
 }
 
 nav :hover{
-	background-color:black;
-	color:white;
+	background-color:#ffa500;
+	color:#1c2b49;
 }
 
 h2{ 
@@ -95,44 +101,86 @@ h2{
 	background-position: center;
 }
 
-.ensavoirplus a{
-	color: white;
-	text-decoration: none;
-	position:absolute	 
+.ensavoirplus{
+	padding-left:1000px;
+	padding-top:400px;
 }
 
+
+.ensavoirplus a{
+	color: white;
+	font-family:'counter-strikeregular';
+	text-decoration: none;
+	font-size:2em;
+}
+
+
 #presentation{
-	height:90vh;
+	height:2000px;
 	width:100%;
-	background-color: #1c2b49;
+	background-color:rgb(104, 104, 104)
 	
 }
 
 #presentation h2{
+	font-family:'counter-strikeregular';
 	color:white;
 	padding-top:110px;
-	padding-left:5%;		
+	padding-left:7%;		
 }
 
-.article1{
-	display: flex;	
+
+
+.container{
+	display:grid;
+	grid-template-columns:2fr 1fr;
+    grid-template-rows:1fr 1fr;
+}
+
+.text1{
+	height:170px;
+	width:700px;
+	background:#121c30;
+	border: solid 0.5px black;
+	border-radius:20px;
+	text-align:center;
+	overflow:hidden;
+	padding:20px;
+	grid-column-start:1;
+	grid-row-start:1;
+	margin-top:30px;
+	margin-left:50px;
+}
+
+.text2{
+	height:170px;
+	width:400px;
+	background:#121c30;
+	border: solid 0.5px black;
+	border-radius:20px;
+	text-align:center;
+	overflow:hidden;
+	padding:20px;
+	grid-column-start:1;
+	grid-row-start:2;
 }
 
 .presTxt{
-	height:350px;
-	width:500px;
-	padding:20px;
-	margin-left:6%;
-	margin-top:10%;
-	background-color:#1c2b49;
-	border: solid 0,5% black;
-	border-radius:20px;
-	text-align:center;
-	overflow:hidden
-}
-
-.presTxt p{
 	font-size:1.2em;
 	color:white;
+}
+.img5VS5{
+	width: 380px;
+	height:auto;
+	grid-column-start:2;
+	grid-row-start:1;
+	margin-top:15px;
+	
+}
 
+.miniature{
+	width: 100px;
+	height:auto;
+	grid-column-start:2;
+	grid-row-start:1;
 }
