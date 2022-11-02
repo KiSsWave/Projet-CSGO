@@ -1,0 +1,462 @@
+@font-face {
+    font-family: 'counter-strikeregular';
+    src: url('font/cs_regular-webfont.woff2') format('woff2'),
+         url('font/cs_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+*{
+    padding: 0;
+	margin: 0;
+	font-family: 'Josefin Sans', sans-serif;
+	box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header{
+	position: sticky;
+	top:0;
+    display:flex;
+    background-color: white;
+    color:black;
+    justify-content:space-between;  
+	z-index:1000;    
+	width:100%;
+	height:10vh;   
+	border-bottom:#000 solid 2px;  
+}
+
+header a{
+	text-decoration:none;
+}
+
+.title{
+	display:flex;
+	align-items: center;
+}
+
+.title h1 span{
+	text-decoration: none;
+	font-family:'counter-strikeregular';
+}
+.title h1{
+	font-family:'counter-strikeregular';
+}
+
+#CS{
+    color:#1c2b49;
+}
+
+#GO{
+    color:#ffa500;
+}
+
+.logo{
+    height:9.5vh;
+	width:auto;
+}
+
+nav{
+	top:0;
+	margin:0;
+	display: flex;
+	background-color: white;
+	align-items: center;
+	justify-content:space-around;
+}
+
+nav a{
+	margin: 0 10px;
+	font-family:'counter-strikeregular';
+	text-transform: uppercase;
+    font-size:21px;
+	color:black;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 3.5vh;
+}
+
+nav :hover{
+	background-color:#ffa500;
+	color:#1c2b49;
+}
+
+section{
+	overflow: hidden;
+}
+
+h2{ 
+	font-size:4em;
+	font-family:'counter-strikeregular';
+
+}
+
+#introduction{
+	height:100vh;
+	width: 100%;
+	background-image: url(img/fondaccueil.jpg);
+	background-size: cover;
+	background-position: center;
+	display: grid;
+	grid-template-columns: repeat(2,50%);
+	grid-template-rows: repeat(2,50%);
+}
+
+#introduction .imgContainer{
+	grid-row: 1;
+	grid-column: 2;
+}
+
+#introduction .presbtn{
+	grid-row: 2;
+	grid-column: 2;
+	text-align: center;
+}
+
+#introduction a{
+	color: white;
+	font-family:'counter-strikeregular';
+	text-decoration: none;
+	font-size:2em;
+	text-align: center;
+	border-radius: 10px;
+	padding: 20px;
+	transition: 0.24s;
+}
+
+#introduction a:hover{
+	background-color: #121c30;
+	box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.475);
+}
+
+#presentation{
+	height:1080px;
+	width:100%;
+	background-color:#121c30;	
+}
+
+#presentation h2{
+	font-family:'counter-strikeregular';
+	color:white;
+	padding-top:110px;
+	padding-left:7%;
+	text-decoration: underline;
+}
+
+
+
+.containerPres{
+	display:flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#text1{
+	min-height:170px;
+	width:700px;
+	text-align:center;
+	padding:20px;
+	margin-top:30px;
+}
+
+#text2{
+	min-height:170px;
+	width:400px;
+	border-radius:20px;
+	text-align:center;
+	padding:20px;
+	grid-column-start:1;
+	grid-row-start:2;
+}
+
+.presTxt{
+	font-size:1.2em;
+	color:white;
+	background:#b97900;
+	border: solid 3px black;
+	border-radius:20px;
+	line-height: 2em;
+	box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.475);
+}
+
+#img5VS5{
+	width: 380px;
+	margin-top:15px;
+	background-color: #000;
+	padding: 20px;
+	border-radius: 24px;
+	box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.475);
+}
+
+#screenshot{
+	width: 600px;
+	box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.475);
+}
+
+.imgContainer{
+	text-align: center;
+	margin: auto;
+}
+
+.img-titre p{
+	color:white;
+}
+
+#fullLogo{
+	width: 500px;
+	
+}
+
+.presImg{
+	color: #ffff;
+	text-align: center;
+}
+
+.presImg p{
+	margin-top: 10px;
+}
+
+#presP1{
+	margin-bottom: 20px;
+}
+
+
+#skin{
+	height:1750px;
+	width:100%;
+}
+
+.skincsgo{
+	height:65%;
+	background-color:#094c5a;
+}
+.skincsgo h2{
+	padding-top:110px;
+	padding-left:7%;
+	text-decoration: underline;
+	color:white;
+}
+
+.skincsgo1{
+	height:800px;
+	width:600px;
+	margin:20px;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+	background-color: #121c30;
+	border-radius:20px;
+	color:white;
+	box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.475);
+}
+
+
+#text3{
+	padding:10px;
+	text-align: justify;
+	font-size: 20px;
+	text-align:center;
+	margin-bottom: 25px;
+	line-height:20px;
+}
+
+
+#imgskin{
+	background-color: rgba(0, 0, 0, 0);
+	border-radius:0;
+	box-shadow:none;
+}
+
+#skin1{
+	width: 100%;
+	height: 47.5%;
+	box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.475);
+
+}
+
+#skin2{
+	width: 100%;
+	height: 47.5%;
+	box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.475);
+}
+
+.addiction{
+	background-color: #2c3643;
+	height:35%;
+}
+
+#presP4{
+	padding-top:50px;
+	padding-bottom:50px;
+
+}
+
+.addiction1{
+	height: 450px;
+	width: 800px;
+	background-color:#121c30;
+	border-radius: 20px;
+	margin: 20px;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+	color:white;
+	box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.475);
+	
+}
+
+#text4{
+	padding:25px;
+	text-align: justify;
+	color: #ffffff;
+	font-size: 23px;
+}
+
+
+#imgaddiction{
+	width: 100%;
+	height: 100%;
+	border-radius: 20px;
+	
+}
+
+#esport{
+	height:1700px;
+	width:100%;
+}
+
+.cquoi{
+	background-color:#121c30;
+	height:50%;	
+}
+
+.cquoi h2{
+	padding-top:110px;
+	padding-left:7%;
+	text-decoration: underline;
+	color:white;
+	
+}
+
+#presP5{
+	margin-top:20px;
+}
+
+
+.cquoi1{
+	height: 450px;
+	width: 800px;
+	background-color:#1c2b49;;
+	border-radius: 20px;
+	margin: 20px;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+	color:white;
+	box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.475);
+	
+}
+
+#text5{
+	padding:25px;
+	text-align: justify;
+	color: #ffa500;
+	font-size: 28px;
+	margin-bottom: 25px;
+	
+}
+
+
+#esl2014{
+	width: 100%;
+	height: 95%;
+	border-radius: 20px;
+}
+
+
+.esportcsgo{
+	background-color: rgb(28, 28, 28);
+	height:50%;
+}
+
+.esportcsgo h2{
+	padding-top:110px;
+	text-align:right;
+	padding-top:110px;
+	padding-right:7%;
+	text-decoration: underline;
+	color:white;
+}
+
+.esport1{
+	height: 450px;
+	width: 800px;
+	background-color:#1d5532;
+	border-radius: 20px;
+	margin: 20px;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+	color:white;
+	box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.475);
+	
+}
+
+#text6{
+	padding:25px;
+	text-align: justify;
+	color: #ffffff;
+	font-size: 23px;
+}
+
+
+#equipe{
+	width: 100%;
+	height: 95%;
+	border-radius: 20px;	
+}
+
+
+section#about{
+	height: 100vh;
+	background-image: url("img/aboutbg.png");
+	background-size: cover;
+}
+
+.us{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 100px;
+}
+
+#about h2{
+	color: white;
+	margin-top: 110px;
+	margin-left: 7%;
+
+}
+
+.portrait{
+	text-align: center;
+}
+
+.portrait img{
+	width: 200px;
+	border: 5px solid black;
+	margin: 20px;
+}
+
+.name{
+	color: white;
+	font-size: 3em;
+	padding: 20px;
+}
+
+.portrait p{
+	color: white;
+	font-size: 2em;
+}
+
